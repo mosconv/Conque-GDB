@@ -24,6 +24,7 @@ let s:src_bufwin = -1
 
 " True if the terminal being opened currently is a gdb terminal
 let s:is_gdb_startup = 0
+let $GDB_IS_RUNNING = 0
 
 " Name of the sign showing up when a break point has been reached
 let s:SIGN_POINTER = 'conque_gdb_sign_pointer'
@@ -446,12 +447,14 @@ function! conque_gdb#open(...)
 
         let l:gdb_cmd = s:gdb_command . l:extra . l:user_args
         let s:is_gdb_startup = 1
+        let $GDB_IS_RUNNING = 1
         try
             let s:gdb = conque_term#open(l:gdb_cmd, l:start_cmds, get(a:000, 2, 0), get(a:000, 3, 1), s:term_object)
             sil exe 'file ConqueGDB\#' . s:gdb.idx
         catch
         endtry
         let s:is_gdb_startup = 0
+        let $GDB_IS_RUNNING = 0
     endif
 	let s:src_bufwin = winnr("#")
 endfunction
