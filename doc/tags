@@ -6,6 +6,7 @@ ConqueGdbSplit	conque_gdb.txt	/*ConqueGdbSplit*
 ConqueGdbTab	conque_gdb.txt	/*ConqueGdbTab*
 ConqueGdbVSplit	conque_gdb.txt	/*ConqueGdbVSplit*
 ConqueTerm	conque_term.txt	/*ConqueTerm*
+ConqueTermPaste	conque_term.txt	/*ConqueTermPaste*
 ConqueTermSplit	conque_term.txt	/*ConqueTermSplit*
 ConqueTermTab	conque_term.txt	/*ConqueTermTab*
 ConqueTermVSplit	conque_term.txt	/*ConqueTermVSplit*
@@ -71,6 +72,7 @@ conque-gdb-step-mapping	conque_gdb.txt	/*conque-gdb-step-mapping*
 conque-gdb-toggle-mapping	conque_gdb.txt	/*conque-gdb-toggle-mapping*
 conque-gdb-unix-requirements	conque_gdb.txt	/*conque-gdb-unix-requirements*
 conque-gdb-usage	conque_gdb.txt	/*conque-gdb-usage*
+conque-gdb-view-options	conque_gdb.txt	/*conque-gdb-view-options*
 conque-gdb-windows-requirements	conque_gdb.txt	/*conque-gdb-windows-requirements*
 conque-gen-usage	conque_term.txt	/*conque-gen-usage*
 conque-get-instance	conque_term.txt	/*conque-get-instance*

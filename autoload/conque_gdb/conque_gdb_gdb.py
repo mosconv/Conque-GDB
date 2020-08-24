@@ -12,6 +12,6 @@ def prompt_hook(prompt):
     print('\x1a\x18')
 
 gdb.events.exited.connect(exit_handler)
-gdb.prompt_hook = prompt_hook
+#gdb.prompt_hook = prompt_hook
 
 gdb.execute('source ' + os.path.dirname(os.path.abspath(__file__)) + '/conque_gdb.gdb', False, True)
